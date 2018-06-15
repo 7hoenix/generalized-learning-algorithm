@@ -1,0 +1,8 @@
+rename-session dev
+
+split-window -v
+
+send "cd ruby" C-m
+send "just test" C-m
+select-pane -U
+send "cd ruby" C-m
