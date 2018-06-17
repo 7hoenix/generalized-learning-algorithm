@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat (12, 1fr);
+  grid-template-rows: 75px 50px 50px 50px;
+  grid-gap: 5px;
+  grid-template-areas:
+      ". . . . . r r . . . . ."
+      ". . . . c c c c . . . ."
+      ". . . . c c c c . . . ."
+      ". . . . c c c c . . . .";
+}
+
+.root {
+  grid-area: r;
+  border: 1px solid red;
+}
+
+.content {
+  grid-area: c;
+  border: 1px solid blue;
+}
